@@ -11,11 +11,23 @@ public class DecimalCollectionTest {
     @Before
     public void before() {
         collection = new DecimalCollection();
+        collection.add(1.95);
+        collection.add(9.75);
     }
     
     @Test
-    public void testDecimalCollection() {
-        assertEquals(0, collection.size());
+    public void testSize() {
+        assertEquals(2, collection.size());
+    }
+    
+    @Test
+    public void testSum() {
+        assertEquals(11.70, collection.sum(), 10e-5);
+    }
+    
+    @Test
+    public void testHigher(){
+        assertEquals(9.75, collection.higher(), 10e-5);
     }
     
 }
