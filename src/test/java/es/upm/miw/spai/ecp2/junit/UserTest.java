@@ -32,4 +32,10 @@ public class UserTest {
         assertEquals("J.", user.initials());
     }
     
+    @Test
+    public void testAbbreviation(){
+    	User user = new User(1, "Nombre", "Apellido");
+        assertEquals(user.abbreviation(), "N. Apellido");
+    }
+    
 }

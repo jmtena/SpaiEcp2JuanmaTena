@@ -38,5 +38,9 @@ public class User {
     public String getFamilyName() {
         return this.familyName;
     }
+    
+    public String abbreviation() {
+    	return this.name.substring(0,1) + ". " + this.familyName;
+    }
 
 }
