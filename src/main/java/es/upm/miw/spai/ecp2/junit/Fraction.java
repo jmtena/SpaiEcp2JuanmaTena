@@ -68,4 +68,12 @@ public class Fraction {
     		
     }
     
+    public int compare(Fraction f) {
+    	if (this.isEquivalent(f)) {
+    		return 0;
+    	} else {
+    		return (this.decimal() < f.decimal()) ? -1 : 1;
+    	}
+    }
+    
 }
