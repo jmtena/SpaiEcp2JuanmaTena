@@ -1,6 +1,7 @@
 package es.upm.miw.spai.ecp2.junit;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class DecimalCollection {
@@ -35,6 +36,12 @@ public class DecimalCollection {
             }
         }
         return higher;
+    }
+    
+    public double amplitud(){
+    	double max = Collections.max(collection);
+    	double min = Collections.min(collection);
+    	return max-min;
     }
 
 }

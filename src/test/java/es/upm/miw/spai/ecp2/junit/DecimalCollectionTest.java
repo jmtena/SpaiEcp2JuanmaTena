@@ -30,4 +30,8 @@ public class DecimalCollectionTest {
         assertEquals(9.75, collection.higher(), 10e-5);
     }
     
+    @Test
+    public void testAmplitud(){
+    	assertEquals(7.8, collection.amplitud(), 10e-5);
+    }
 }
