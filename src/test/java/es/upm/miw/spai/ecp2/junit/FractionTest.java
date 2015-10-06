@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+
 public class FractionTest {
     private Fraction fraction;
     
@@ -45,4 +46,13 @@ public class FractionTest {
     	assertEquals(major.compare(minor), 1, 0.0);
     	assertEquals(minor.compare(minor), 0, 0.0);
     }
+    
+    @Test
+    public void testMultiply(){
+        fraction.multiply(new Fraction (2,3));
+        assertEquals(4, fraction.getNumerator());
+        assertEquals(9, fraction.getDenominator());
+    }
+    
+    
 }
