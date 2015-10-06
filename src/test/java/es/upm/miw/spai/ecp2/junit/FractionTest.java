@@ -35,4 +35,14 @@ public class FractionTest {
     public void testIsEquivalent(){
     	assertEquals(true, fraction.isEquivalent(new Fraction (4, 6)));
     }
+    
+    @Test
+    public void testCompare(){
+    	Fraction minor = new Fraction(1,6);
+    	Fraction major = new Fraction(2,3);
+    	
+    	assertEquals(minor.compare(major), -1, 0.0);
+    	assertEquals(major.compare(minor), 1, 0.0);
+    	assertEquals(minor.compare(minor), 0, 0.0);
+    }
 }
