@@ -43,5 +43,17 @@ public class DecimalCollection {
     	double min = Collections.min(collection);
     	return max-min;
     }
+    
+    
+    public double media() 
+    {
+        double media = 0.0;
+        for (Double number : this.collection) 
+        {
+            media += number;
+        }
+        media = media / this.collection.size();
+        return media;
+    }
 
 }

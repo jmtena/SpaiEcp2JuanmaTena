@@ -34,4 +34,11 @@ public class DecimalCollectionTest {
     public void testAmplitud(){
     	assertEquals(7.8, collection.amplitud(), 10e-5);
     }
+    
+    @Test
+    public void testMedia(){
+        assertEquals(5.85, collection.media(), 10e-5);
+    }
+    
+    
 }
