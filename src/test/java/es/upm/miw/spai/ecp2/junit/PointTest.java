@@ -47,5 +47,30 @@ public class PointTest {
     public void testIsEqual(){
     	assertEquals(true, pt.isEqual(new Point (2,3)));
     }
+    
+    @Test
+    public void testSetX(){
+    	Point point = new Point();
+    	point.setX(10);
+    	
+    	assertEquals(point.getX(), 10, 0.0);
+    }
+    
+    @Test
+    public void testSetY(){
+    	Point point = new Point();
+    	point.setY(10);
+    	
+    	assertEquals(point.getY(), 10, 0.0);
+    }
+    
+    @Test
+    public void testSetXY(){
+    	Point point = new Point();
+    	point.setXY(5,7);
+    	
+    	assertEquals(point.getX(), 5, 0.0);
+    	assertEquals(point.getY(), 7, 0.0);
+    }
 
 }
