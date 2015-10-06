@@ -30,4 +30,9 @@ public class FractionTest {
     public void testDecimal(){
         assertEquals(0.6666, fraction.decimal(), 10e-5);
     }
+    
+    @Test
+    public void testIsEquivalent(){
+    	assertEquals(true, fraction.isEquivalent(new Fraction (4, 6)));
+    }
 }

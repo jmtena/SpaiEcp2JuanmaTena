@@ -61,4 +61,11 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean isEquivalent(Fraction f){
+    	if (this.numerator * f.denominator == this.denominator * f.numerator)
+    		return true;
+    	else return false;
+    		
+    }
+    
 }
