@@ -13,8 +13,5 @@ notifications:
     recipients:
       - jm.tena01@hotmail.com
       
-<<<<<<< HEAD
 script: mvn verify
-=======
-script: mvn verify
->>>>>>> refs/heads/develop
+
