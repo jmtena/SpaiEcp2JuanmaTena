@@ -61,4 +61,24 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean isEquivalent(Fraction f){
+    	if (this.numerator * f.denominator == this.denominator * f.numerator)
+    		return true;
+    	else return false;
+    		
+    }
+    
+    public int compare(Fraction f) {
+    	if (this.isEquivalent(f)) {
+    		return 0;
+    	} else {
+    		return (this.decimal() < f.decimal()) ? -1 : 1;
+    	}
+    }
+    
+    public void multiply(Fraction f){
+        this.numerator = this.getNumerator()*f.getNumerator();
+        this.denominator = this.getDenominator()*f.getDenominator();
+    }
+    
 }

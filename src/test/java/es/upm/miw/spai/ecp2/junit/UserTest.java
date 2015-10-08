@@ -32,4 +32,18 @@ public class UserTest {
         assertEquals("J.", user.initials());
     }
     
+    @Test
+    public void testAbbreviation(){
+    	User user = new User(1, "Nombre", "Apellido");
+        assertEquals(user.abbreviation(), "N. Apellido");
+    }
+    
+    @Test
+    public void testLower(){
+        User user1 = new User(1, "Nombre", "Apellido");
+        User user2 = new User(7, "Nombre", "Ape");
+        assertEquals("Nombre Ape", user1.lower(user2));
+    }
+     
+    
 }

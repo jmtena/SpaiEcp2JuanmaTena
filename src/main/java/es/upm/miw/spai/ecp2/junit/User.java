@@ -38,5 +38,17 @@ public class User {
     public String getFamilyName() {
         return this.familyName;
     }
+    
+    public String abbreviation() {
+    	return this.name.substring(0,1) + ". " + this.familyName;
+    }
+    
+    public String lower(User user){
+        String lowFullName = this.fullName();
+        if (this.getFamilyName().compareToIgnoreCase(user.getFamilyName())>=0){
+            lowFullName = user.fullName();    
+        }
+        return lowFullName;
+    }
 
 }

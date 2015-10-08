@@ -43,4 +43,23 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public boolean isEqual(Point p){
+    	if (this.x == p.x && this.y == p.y)
+    		return true;
+    	else return false;
+    }
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+    
+	public void setXY(int x, int y) {
+		this.setX(x);
+		this.setY(y);
+	}
+    
 }
